@@ -65,9 +65,10 @@ const submit = require('./API/submit');
 // Use API
 app.use('/submitFave', submit);
 
-// Start server
-// const PORT = 5000;
+//Start Serverrrr
 
-// app.listen(PORT, () => {    
-//     console.log(`Server is running on http://localhost:${PORT}`);
-// });
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, () => {    
+console.log(`Server is running on http://localhost:${PORT}`);
+});
