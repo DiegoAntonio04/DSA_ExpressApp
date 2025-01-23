@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0os.mongodb.net/',{
+mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0os.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
