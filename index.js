@@ -2,6 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
+//
+const http= require('http');
+const server= http.createServer(app);
 
 
 // Middleware
@@ -63,8 +66,8 @@ const submit = require('./API/submit');
 app.use('/submitFave', submit);
 
 // Start server
-const PORT = 5000;
+// const PORT = 5000;
 
-app.listen(PORT, () => {    
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {    
+//     console.log(`Server is running on http://localhost:${PORT}`);
+// });
