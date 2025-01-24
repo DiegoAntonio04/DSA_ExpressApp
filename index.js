@@ -26,14 +26,14 @@ mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0
 })
 .catch((error) => {
     console.error('MongoDB Connection Error:', error.message);
-    process.exit(1); // Exit process with failure,
+    process.exit(1); 
 });
 
 // Import API
 const submit = require('./API/submit');
 
 // Use API
-app.use('/submit', submit);
+app.use('/submitFave', submit);
 
 //Start Serverrrr
 

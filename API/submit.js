@@ -13,9 +13,9 @@ router.post("/", async (req, res) => {
             email,
             favoritePokemon
         });
-       const saveEntry = await FormEntry.save();
+    const saveEntry = await FormEntry.save();
 
-        console.log("Saved Data:",saveEntry);
+    console.log("Saved Data:",saveEntry);
 
         //response
         res.status(201).json({ message: "Data received Successfully" });

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const FormSchema = new mongoose.Schema({
+const FormSchema = mongoose.Schema({
   name: {
     type: String,
     required: true
