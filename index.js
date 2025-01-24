@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve HTML page
-app.get('/submit', (req, res) => {
+app.get('/', (req, res) => {
     res.send(`
 <!DOCTYPE html>
 <html lang="en">
