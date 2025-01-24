@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve HTML page
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send(`Server is running`);
 });
 
