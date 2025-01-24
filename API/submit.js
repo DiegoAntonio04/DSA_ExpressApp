@@ -16,7 +16,9 @@ router.post("/", async (req, res) => {
        const saveEntry = await FormEntry.save();
 
         console.log("Saved Data:",saveEntry);
-        res.status(200).json({ message: "Data received" });
+
+        //response
+        res.status(201).json({ message: "Data received Successfully" });
         
     } catch (error) {
         console.error("Error saving data:", error);
