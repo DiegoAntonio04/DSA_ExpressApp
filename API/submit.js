@@ -1,6 +1,6 @@
 const express = require('express'); 
 const router = express.Router();
-const Form = require('../Models/PokeIndex'); // Corrected path
+const Form = require('../Models/PokeIndex'); 
 
 // POST route for submitting data
 router.post("/", async (req, res) => {
@@ -34,4 +34,4 @@ router.post("/", async (req, res) => {
     }
 );
 
-module.exports = router;
+modules.exports = router;

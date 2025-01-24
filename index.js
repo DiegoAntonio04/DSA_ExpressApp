@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Serve HTML page
 app.get('/', (req, res) => {
-    res.send(`Srver is running`);
+    res.send(`Server is running`);
 });
 
 // Connect to MongoDB
