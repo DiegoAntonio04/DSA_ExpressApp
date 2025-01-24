@@ -13,8 +13,7 @@ app.use(express.json());
 
 // Serve HTML page
 app.get('/', (req, res) => {
-    res.send(`
-<!DOCTYPE html>
+    res.send(`\<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -63,7 +62,7 @@ mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0
 const submit = require('./API/submit');
 
 // Use API
-app.use('/submitFave', submit);
+app.use('/submit', submit);
 
 //Start Serverrrr
 
