@@ -3,7 +3,7 @@ const router = express.Router();
 const Form = require('../Models/PokeIndex'); // Corrected path
 
 // POST route for submitting data
-router.post("/submit", async (req, res) => {
+router.post("/", async (req, res) => {
     const { name, age, email, favoritePokemon } = req.body;
 
     try {
