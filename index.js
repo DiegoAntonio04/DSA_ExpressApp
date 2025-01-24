@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0os.mongodb.net/test', {
+mongoose.connect('mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0os.mongodb.net/expressNodeApp/test/forms', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
